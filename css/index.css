@@ -16,6 +16,19 @@
   --transition: 0.2s ease;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-desaturated-blue);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slightly-transparent-white);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--soft-violet);
+}
+
 html {
   box-sizing: border-box;
 }
