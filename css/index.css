@@ -1,0 +1,73 @@
+:root {
+  --inter-font: "Inter", sans-serif;
+  --lexend-font: "Lexend Deca", sans-serif;
+
+  /* Primary */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  /* Neutral */
+  /* (main heading, stats) */
+  --white: hsl(0, 0%, 100%);
+  /* (main paragraph) */
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (stat headings) */
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+  background: var(--very-dark-blue);
+  color: var(--white);
+  font-family: var(--inter-font);
+  padding: 2rem 0.6rem;
+}
+
+.card-container {
+  margin: auto;
+  width: 290px;
+  background: var(--dark-desaturated-blue);
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.card-title {
+  font-size: 1.9rem;
+}
+.card-title span {
+  color: var(--soft-violet);
+}
+
+.card-text {
+  text-align: center;
+  opacity: 0.8;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Companies Section */
+.card-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-list-item {
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+}
+
+.card-list-item-span {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.footer {
+  display: none;
+}
