@@ -133,7 +133,23 @@ main {
 }
 
 .footer {
-  display: none;
+  display: block;
+  text-align: center;
+  width: 90%;
+  margin: 2rem auto;
+  color: var(--slightly-transparent-white);
+  border-top: 1px solid var(--slightly-transparent-white);
+  padding-top: 1rem;
+}
+
+.footer-link {
+  color: var(--soft-violet);
+  text-decoration: none;
+  font-family: var(--lexend-font);
+  letter-spacing: 0.5px;
+}
+.footer-link:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 800px) {
