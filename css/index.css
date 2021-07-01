@@ -19,7 +19,12 @@ body {
   background: var(--very-dark-blue);
   color: var(--white);
   font-family: var(--inter-font);
-  padding: 2rem 0.6rem;
+  padding: 2rem 0.5rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
 }
 
 .card-container {
@@ -27,12 +32,52 @@ body {
   width: 290px;
   background: var(--dark-desaturated-blue);
   text-align: center;
-  padding: 1.5rem;
   border-radius: 12px;
+}
+@media (min-width: 375px) {
+  .card-container {
+    width: 310px;
+  }
+}
+@media (min-width: 380px) {
+  .card-container {
+    width: 340px;
+  }
+}
+@media (min-width: 700px) {
+  .card-container {
+    width: 500px;
+  }
+}
+
+.card-img {
+  height: 230px;
+  width: 100%;
+  background: url(../images/image-header-mobile.jpg);
+  border-radius: 12px 12px 0 0;
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  position: relative;
+}
+.card-img::after {
+  content: "";
+  background: var(--soft-violet);
+  height: 230px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.45;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-content-container {
+  padding: 1.5rem 1rem;
 }
 
 .card-title {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 .card-title span {
   color: var(--soft-violet);
@@ -40,9 +85,9 @@ body {
 
 .card-text {
   text-align: center;
-  opacity: 0.8;
   line-height: 1.5;
   font-size: 1rem;
+  color: var(--slightly-transparent-white);
 }
 
 /* Companies Section */
@@ -65,9 +110,38 @@ body {
   display: block;
   font-weight: 400;
   font-size: 0.8rem;
-  opacity: 0.6;
+  color: var(--slightly-transparent-white);
 }
 
 .footer {
   display: none;
+}
+
+@media (min-width: 800px) {
+  .card-container {
+    display: flex;
+    width: 90%;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .card-content-container {
+    padding: 2rem 3rem;
+  }
+
+  .card-text {
+    text-align: left;
+    width: 300px;
+  }
+
+  .card-list-container {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .card-list-item {
+    font-size: 1.2rem;
+  }
 }
