@@ -11,8 +11,6 @@
   --white: hsl(0, 0%, 100%);
   /* (main paragraph) */
   --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
-  /* (stat headings) */
-  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
   --transition: 0.2s ease;
 }
 
@@ -79,19 +77,19 @@ main {
   background: url(../images/image-header-mobile.jpg);
   border-radius: 12px 12px 0 0;
   background-size: cover;
-  /* background-size: contain; */
   background-repeat: no-repeat;
   position: relative;
 }
 .card-img::after {
   content: "";
-  background: var(--soft-violet);
+  /* background: var(--soft-violet); */
+  background: hsl(277, 75%, 30%);
   height: 230px;
   width: 100%;
   top: 0;
   left: 0;
   display: block;
-  opacity: 0.45;
+  opacity: 0.55;
   border-radius: 12px 12px 0 0;
 }
 
@@ -126,7 +124,6 @@ main {
 
 .card-list-item {
   letter-spacing: 0.5px;
-  font-size: 1rem;
   font-weight: 700;
   font-size: 1.6rem;
   margin: 1rem 0;
